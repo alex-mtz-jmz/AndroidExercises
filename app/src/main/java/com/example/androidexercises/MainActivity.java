@@ -30,10 +30,17 @@ public class MainActivity extends AppCompatActivity {
             case R.id.itemLifeCycle_main:
                 intencion = new Intent(this, LifeCycleActivity.class);
                 startActivity(intencion);
+                break;
 
             case R.id.itemIntents_main:
                 intencion = new Intent(this, IntentsActivity.class);
                 startActivity(intencion);
+                break;
+
+            case R.id.itemSnackbar_main:
+                intencion = new Intent(this, SnackbarActivity.class);
+                startActivity(intencion);
+                break;
         }
 
         return super.onOptionsItemSelected(item);

@@ -6,4 +6,7 @@
     <string name="btnSMS_Intent">Enviar SMS</string>
     <string name="btnEmail_Intent">Enviar Email</string>
     <string name="btnWebSite_Intent">Abrir sitio</string>
+    <string name="btnSimple_Snackbar">Snackbar simple</string>
+    <string name="btnCustom_Snackbar">Snackbar Personalizado</string>
+    <string name="itemSnackbar_main">Actividad de Snackbar</string>
 </resources>

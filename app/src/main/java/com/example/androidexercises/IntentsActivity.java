@@ -49,7 +49,7 @@ public class IntentsActivity extends AppCompatActivity implements View.OnClickLi
 
             case R.id.btnWebSite_Intent:
                 Toast.makeText(this, "Abrir sitio", Toast.LENGTH_LONG).show();
-                implicitIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("www.google.com"));
+                implicitIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
                 startActivity(implicitIntent);
                 break;
         }

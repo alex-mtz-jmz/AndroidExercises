@@ -9,4 +9,9 @@
         android:title="@string/itemIntents_main"
         />
 
+    <item
+        android:id="@+id/itemSnackbar_main"
+        android:title="@string/itemSnackbar_main"
+        />
+
 </menu>
