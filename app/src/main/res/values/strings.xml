@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android Exercises</string>
+    <string name="itemLifeCycle_main">Actividad de Ciclo de Vida</string>
+    <string name="itemIntents_main">Actividad de Intenciones</string>
+    <string name="btnCall_Intents">Llamar</string>
+    <string name="btnSMS_Intent">Enviar SMS</string>
+    <string name="btnEmail_Intent">Enviar Email</string>
+    <string name="btnWebSite_Intent">Abrir sitio</string>
+</resources>
