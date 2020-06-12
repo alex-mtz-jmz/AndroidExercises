@@ -9,4 +9,5 @@
     <string name="btnSimple_Snackbar">Snackbar simple</string>
     <string name="btnCustom_Snackbar">Snackbar Personalizado</string>
     <string name="itemSnackbar_main">Actividad de Snackbar</string>
+    <string name="btnAction_Snackbar">Snackbar con accion</string>
 </resources>
