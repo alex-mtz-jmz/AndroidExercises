@@ -22,36 +22,35 @@ public class IntentsActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         Intent implicitIntent;
 
-        switch (v.getId()){
-            case R.id.btnCall_Intent:
-                Toast.makeText(this, "Llamar", Toast.LENGTH_LONG).show();
-                implicitIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:4612609941"));
-                startActivity(implicitIntent);
-                break;
-
-            case R.id.btnSMS_Intent:
+        if(v.getId() == R.id.btnCall_Intent){
+            Toast.makeText(this, "Llamar", Toast.LENGTH_LONG).show();
+            implicitIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:4612609941"));
+            startActivity(implicitIntent);
+        }
+        else{
+            if(v.getId() == R.id.btnSMS_Intent){
                 Toast.makeText(this, "Enviar mensaje", Toast.LENGTH_LONG).show();
                 implicitIntent = new Intent(Intent.ACTION_SENDTO);
                 implicitIntent.setData(Uri.parse("smsto:"));
                 implicitIntent.putExtra("sms_body", "Mensaje de prueba");
                 startActivity(implicitIntent);
-                break;
-
-            case R.id.btnEmail_Intent:
-                Toast.makeText(this, "Enviar correo", Toast.LENGTH_LONG).show();
-                implicitIntent = new Intent(Intent.ACTION_SEND);
-                //implicitIntent.setType("*/*");
-                implicitIntent.setData(Uri.parse("mailto:"));
-                implicitIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {"ale.mtz.jmz@gmail.com"});
-                implicitIntent.putExtra(Intent.EXTRA_SUBJECT, "Prueba");
-                startActivity(implicitIntent);
-                break;
-
-            case R.id.btnWebSite_Intent:
-                Toast.makeText(this, "Abrir sitio", Toast.LENGTH_LONG).show();
-                implicitIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
-                startActivity(implicitIntent);
-                break;
+            }
+            else{
+                if(v.getId() == R.id.btnEmail_Intent){
+                    Toast.makeText(this, "Enviar correo", Toast.LENGTH_LONG).show();
+                    implicitIntent = new Intent(Intent.ACTION_SEND);
+                    implicitIntent.setType("*/*");
+                    //implicitIntent.setData(Uri.parse("mailto:"));
+                    implicitIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {"ale.mtz.jmz@gmail.com"});
+                    implicitIntent.putExtra(Intent.EXTRA_SUBJECT, "Prueba");
+                    startActivity(implicitIntent);
+                }
+                else{
+                    Toast.makeText(this, "Abrir sitio", Toast.LENGTH_LONG).show();
+                    implicitIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
+                    startActivity(implicitIntent);
+                }
+            }
         }
     }
 }
