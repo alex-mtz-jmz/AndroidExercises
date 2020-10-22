@@ -52,5 +52,6 @@ public class IntentsActivity extends AppCompatActivity implements View.OnClickLi
                 }
             }
         }
+        //fin de if-else
     }
 }
