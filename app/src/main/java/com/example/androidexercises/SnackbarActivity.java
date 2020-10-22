@@ -32,7 +32,7 @@ public class SnackbarActivity extends AppCompatActivity implements View.OnClickL
             case R.id.btnCustom_Snackbar:
                 Snackbar actionSnackbar = Snackbar.make(coordinatorLayOut, "Snackbar personalizado", Snackbar.LENGTH_LONG);
                 View actionSnackbarView = actionSnackbar.getView();
-                //TextView snackbarText = actionSnackbarView.findViewById()
+                //TextView snackbarText = actionSnackbarView.findViewById(com.google.android.material.snackbar.R);
                 actionSnackbar.show();
                 break;
 
